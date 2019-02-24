@@ -3,9 +3,8 @@ import java.util.Scanner;
 
 public class Item {
     String itemDrop;
-    
-    
 
+   
     public Item initialItem(int getItem) {
         Item item = new Item();
         if (getItem == 0){
@@ -17,11 +16,11 @@ public class Item {
             
         }
         else if (getItem == 2){
-            item.itemDrop = "Shotgun";
+            item.itemDrop = "Glock G43X";
             
         }
         else if (getItem == 3){
-            item.itemDrop = "Sniper";
+            item.itemDrop = "Sniper AWM";
             
         }
         else if (getItem == 4){
@@ -35,6 +34,10 @@ public class Item {
         return item;
 
        
+    }
+    public void print(){
+        System.out.println(itemDrop);
+
     }
 
 

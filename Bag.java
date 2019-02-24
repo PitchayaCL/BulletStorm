@@ -6,7 +6,14 @@ public class Bag {
 
     public Bag(){
         items = new ArrayList<Item>();
+        for (int i=0; i<10; i++){
+            items.add(new Item().initialItem(0));
+        }
+        for (int i=0; i<10; i++){
+            items.add(new Item().initialItem(1));
+        }
     }
+    
 
     public void getItem(){
         int randomm = (int)(Math.random() * 6);
